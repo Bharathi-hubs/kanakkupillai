@@ -12,7 +12,7 @@ const Header = () => {
                     src={logo}
                     alt="Picture of the author"
                     width={150}
-                    height={50}
+                    height={40}
                 />
             </div>
             <ul className="ul-reset mb-0">
@@ -190,11 +190,11 @@ const Header = () => {
                     <Image
                         src={support}
                         alt="Picture of the author"
-                        width={20}
-                        height={20}
+                        width={15}
+                        height={15}
                         className='ms-2 me-2'
                     />
-                    <h6>connect with us</h6>
+                    <h6 style={{fontSize: "0.8rem"}}>connect with us</h6>
                 </div>
                 <h6 className='ms-3 text-center'>7305 345 345</h6>
             </div>

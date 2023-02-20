@@ -19,15 +19,17 @@ import icon11 from '../public/Assets/service-003.png'
 import icon12 from '../public/Assets/service-004.png'
 import icon13 from '../public/Assets/service-005.png'
 import icon14 from '../public/Assets/service-center.png'
-import kyc from '../public/Assets/kyc.svg'
-import sect from '../public/Assets/section-194.svg'
-import aadhar from '../public/Assets/aadhar.svg'
-import calculate from '../public/Assets/calculate.svg'
-import tax from '../public/Assets/tax.svg'
-import props from '../public/Assets/props.svg'
-import goods from '../public/Assets/goods.svg'
-import gst from '../public/Assets/GST.svg'
-import loan from '../public/Assets/loan.svg'
+import kyc from '../public/Assets/aadhar.jpg'
+import calculate from '../public/Assets/calculate.jpg'
+import goods from '../public/Assets/goods.jpg'
+import gst from '../public/Assets/GST.jpg'
+import loan from '../public/Assets/loan.jpg'
+import brand1 from '../public/Assets/indusindbank.jpg'
+import brand2 from '../public/Assets/axisbank.jpg'
+import brand3 from '../public/Assets/kodak.jpg'
+import brand4 from '../public/Assets/hdfc.jpg'
+import brand5 from '../public/Assets/icici.jpg'
+import brand6 from '../public/Assets/federalbank.jpg'
 
 
 export default function Home() {
@@ -95,7 +97,7 @@ export default function Home() {
     }
   ];
 
-  const articles= [
+  const articles = [
     {
       title1: 'KYC is mandatory from 01 November for insurance policies',
       description1: "The Fotolia/Raw Pixel Value Added Tax (VAT) was implemented in the UAE on January 1, 2018, with a 5% rate.",
@@ -158,8 +160,8 @@ export default function Home() {
         </div>
 
       </div>
-      <div className='container'>
-        <div className='container hero-card-container mb-5'>
+      <div className='container-fluid main-container'>
+        <div className='hero-card-container'>
           <div className='hero-cards '>
             <div className='hero-card d-flex'>
               <div className='ps-3 pe-3 icon-card'><TfiWallet className='' /></div>
@@ -186,11 +188,11 @@ export default function Home() {
         </div>
       </div>
       <div className='service-container '>
-        <div className='container'>
-          <p className='ms-5'> <strong className='service-title'>We Provide
+        <div className='container-fluid'>
+          <p className='mx-4'> <strong className='service-title'>We Provide
             <br />
             <span className='best-service'>Best</span> <span className='quality-service'>Quality</span> Services</strong></p>
-          <div className='service-card-section'>
+          <div className='service-card-section mb-3'>
             {cardData.map((item) => (
               <div className='card service-card'>
                 <Image
@@ -205,8 +207,8 @@ export default function Home() {
                 <p className='small service-desc'>{item.description}</p>
                 <div className='card-bottom'>
                   <div className='d-flex justify-content-between align-items-center'>
-                    <button className='read-btn'>READ MORE</button>
                     <p className='text-muted small-text m-0'>* T&C Apply</p>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
                   </div>
                 </div>
               </div>
@@ -218,7 +220,7 @@ export default function Home() {
       <div className='container plan-container'>
         <h1 className='text-center plan-titile'><strong>Choose Our Best Plan</strong></h1>
         <div className='hr-style'></div>
-        <div className='service-card-section mt-5'>
+        <div className='service-card-section mb-3 mt-5'>
           <div className='plan-card'>
             <h5>Proprietorship
               <br />
@@ -227,10 +229,11 @@ export default function Home() {
             <h1 className='text-center'><sup className='medium-rupees-text'>₹</sup><span className='bold-text'>1999</span><small className='medium-text'>/ Excl GST</small></h1>
             <p className='text-center'><span class='small-text bold'>* T & C Apply</span></p>
             <hr />
-            <p className='small'><FcOk /> &nbsp;GST Registration</p>
-            <p className='small'><FcOk /> &nbsp;MSME Registration</p>
-            <p className='small'><FcOk /> &nbsp;Current Account opening - ICICI Bank</p>
-
+            <div className='card-center-content'>
+              <p className='small'><FcOk /> &nbsp;GST Registration</p>
+              <p className='small'><FcOk /> &nbsp;MSME Registration</p>
+              <p className='small'><FcOk /> &nbsp;Current Account opening - ICICI Bank</p>
+            </div>
             <div className='bottom-btn d-flex mt-4 mb-4'>
               <button className='buy-btn text-center mt-4  mx-auto'>BUY NOW</button>
             </div>
@@ -243,14 +246,15 @@ export default function Home() {
             <h1 className='text-center'><sup className='medium-rupees-text'>₹</sup><span className='bold-text'>6141</span><small className='medium-text'>/ Excl GST</small></h1>
             <p className='text-center'><span class='small-text bold'>* T & C Apply</span></p>
             <hr />
-            <p className='small'><FcOk /> &nbsp;DSC - 2 Nos. (2yrs Validity)</p>
-            <p className='small'><FcOk /> &nbsp;Director Identification Number</p>
-            <p className='small'><FcOk /> &nbsp;Name Approvsl for Company</p>
-            <p className='small'><FcOk /> &nbsp;Incorporation of Pvt Ltd Company</p>
-            <p className='small'><FcOk /> &nbsp;PAN & TAN for the Company</p>
-            <p className='small'><FcOk /> &nbsp;Current Account opening - ICICI Bank </p>
-            <p className='small'><FcOk /> &nbsp;Complaince Software</p>
-
+            <div className='card-center-content'>
+              <p className='small'><FcOk /> &nbsp;DSC - 2 Nos. (2yrs Validity)</p>
+              <p className='small'><FcOk /> &nbsp;Director Identification Number</p>
+              <p className='small'><FcOk /> &nbsp;Name Approvsl for Company</p>
+              <p className='small'><FcOk /> &nbsp;Incorporation of Pvt Ltd Company</p>
+              <p className='small'><FcOk /> &nbsp;PAN & TAN for the Company</p>
+              <p className='small'><FcOk /> &nbsp;Current Account opening - ICICI Bank </p>
+              <p className='small'><FcOk /> &nbsp;Complaince Software</p>
+            </div>
             <div className='bottom-btn d-flex mt-4 mb-4'>
               <button className='buy-btn text-center mt-4  mx-auto'>BUY NOW</button>
             </div>
@@ -263,16 +267,17 @@ export default function Home() {
             <h1 className='text-center'><sup className='medium-rupees-text'>₹</sup><span className='bold-text'>1999</span><small className='medium-text'>/ Excl GST</small></h1>
             <p className='text-center'><span class='small-text bold'>* T & C Apply</span></p>
             <hr />
-            <p className='small'><FcOk /> &nbsp;DSC - 2 Nos. (2yrs Validity)</p>
-            <p className='small'><FcOk /> &nbsp;DPIN - 2 Nos.</p>
-            <p className='small'><FcOk /> &nbsp;Name Approval for LLP</p>
-            <p className='small'><FcOk /> &nbsp;Preparation of LLP Agreement</p>
-            <p className='small'><FcOk /> &nbsp;Incorporation of LLP</p>
-            <p className='small'><FcOk /> &nbsp;Form -3  Filling </p>
-            <p className='small'><FcOk /> &nbsp;PAN & TAN for the Company</p>
-            <p className='small'><FcOk /> &nbsp;Current Account opening - ICICI Bank </p>
-            <p className='small'><FcOk /> &nbsp;Complaince Software</p>
-
+            <div className='card-center-content'>
+              <p className='small'><FcOk /> &nbsp;DSC - 2 Nos. (2yrs Validity)</p>
+              <p className='small'><FcOk /> &nbsp;DPIN - 2 Nos.</p>
+              <p className='small'><FcOk /> &nbsp;Name Approval for LLP</p>
+              <p className='small'><FcOk /> &nbsp;Preparation of LLP Agreement</p>
+              <p className='small'><FcOk /> &nbsp;Incorporation of LLP</p>
+              <p className='small'><FcOk /> &nbsp;Form -3  Filling </p>
+              <p className='small'><FcOk /> &nbsp;PAN & TAN for the Company</p>
+              <p className='small'><FcOk /> &nbsp;Current Account opening - ICICI Bank </p>
+              <p className='small'><FcOk /> &nbsp;Complaince Software</p>
+            </div>
             <div className='bottom-btn d-flex mt-4 mb-4'>
               <button className='buy-btn text-center mt-4 mx-auto'>BUY NOW</button>
             </div>
@@ -382,7 +387,6 @@ export default function Home() {
                 <div className="testimonials">
                   <ul>
                     <li>
-                      {/* <strong>Prasanthi Kiran</strong> */}
                       <span className='mb-4'>cxdfgtyu8 Kiran</span>
                       <div className='review'>
                         <FaStar />
@@ -429,7 +433,7 @@ export default function Home() {
                 <div className="testimonials">
                   <ul>
                     <li>
-                      {/* <strong>Prasanthi Kiran</strong> */}
+
                       <span className='mb-4'>cxdfgtyu8 Kiran</span>
                       <div className='review'>
                         <FaStar />
@@ -533,64 +537,160 @@ export default function Home() {
       </div>
 
 
-      <div>
+      <div style={{ backgroundColor: "#f3f3f3" }} className='p-3 pb-5'>
 
-        <h1 className='text-center plan-titile'><strong>What Our <span className='dif-text'>Clients Says</span></strong></h1>
+        <h1 className='text-center plan-titile mt-5'><strong>Our Latest<span className='dif-text'>Articles</span></strong></h1>
         <div className='hr-style'></div>
-        <div>
-
-
-          
-
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      {articles.map((item) => (
-        <div className='service-card-section'>
-         <div class="card cus-card" >
-            <Image src={kyc} class="card-img-top" alt="..." width='350px'/>
-            <div class="card-body">
-              <h5 class="card-title">{item.title1}</h5>
-              <p class="card-text">{item.description1}</p>
-              <button className='read-btn'>READ MORE</button>
+        <div className='container mt-5'>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
-    <div class="card cus-card" >
-            <Image src={kyc} class="card-img-top" alt="..." width='350px'/>
-            <div class="card-body">
-              <h5 class="card-title">{item.title2}</h5>
-              <p class="card-text">{item.description2}</p>
-              <button className='read-btn'>READ MORE</button>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div className='service-card-section mb-3 '>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={kyc} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>KYC is mandatory from 01 November for insurance policies</strong></h5>
+                      <p class="card-text">The Fotolia/Raw Pixel Value Added Tax (VAT) was implemented in the UAE on January 1, 2018, with a 5% rate.</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={loan} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Section 194K – Tax Deduction On Income From Mutual Fund Units</strong></h5>
+                      <p class="card-text">A mutual fund is a type of financial instrument that combines money from investors to buy stocks, bonds, gold, and other assets.</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={gst} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>How to use Aadhaar Card for Electronic Tax Return Verification?</strong></h5>
+                      <p class="card-text">A person is required to submit an Income Tax Return (ITR) form to the CBDT or Department of Indian Income Tax.</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div className='service-card-section mb-3'>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={goods} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>How to Calculate Revenue for a Startup</strong></h5>
+                      <p class="card-text">The method of calculating a startup’s income entails figuring out a few crucial numbers. The startup cost is one such figure.</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={calculate} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Property Tax and Payment of Tax Online</strong></h5>
+                      <p class="card-text">Property tax is the term used to describe the tax assessed on land and structures which are built on such land. The provisions relating to the state of Tamil Nadu’s property</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={loan} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>All You Need To Know About Professional Tax in India</strong></h5>
+                      <p class="card-text">Professional Tax is a tax which is levied by means of the state on the income earned via profession, exchange calling or employment.</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div className='service-card-section mb-3'>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={kyc} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Tips to Increase your Home Loan Eligibility</strong></h5>
+                      <p class="card-text">One of the largest financial decisions you will likely make in your lifetime is whether to buy a home, and if you are thinking about
+
+                      </p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={calculate} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>GST for Renting of Residential Properties</strong></h5>
+                      <p class="card-text">Residential rents will be subject to the Goods and Services Tax (GST) beginning on July 18, 2022, according to a gazette of central tax announcement released on July 13</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                  <div class="card cus-card" style={{ width: "19rem" }}>
+                    <Image src={goods} class="card-img-top card-imgs" alt="..." width='350px' height='auto' />
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>New Goods and Services Tax (GST) Rate List 2022</strong></h5>
+                      <p class="card-text">Rate hikes were approved while exemptions for many items consumed on a large scale were withdrawn. The meeting in this regard was chaired by the Finance Minister</p>
+                    </div>
+                    <div className='card-footer- mb-3 mx-3'><button className='read-btn'>READ MORE</button></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-    <div class="card cus-card" >
-            <Image src={kyc} class="card-img-top" alt="..." width='350px'/>
-            <div class="card-body">
-              <h5 class="card-title">{item.title3}</h5>
-              <p class="card-text">{item.description3}</p>
-              <button className='read-btn'>READ MORE</button>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      ))}
-   
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+      </div>
 
+
+      <div className='container'>
+      <h1 className='text-center plan-titile mt-5'><strong>Our Banking &nbsp;<span className='dif-text'><strong>Partners</strong></span></strong></h1>
+        <div className='hr-style'></div>
+        <div class="slider mt-5 mb-5">
+          <div class="slide-track">
+            <div class="slide">
+              <Image className="brand-logo" src={brand1}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand2}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand3}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand4}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand5}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand6}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand4}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand5}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand6}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand4}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand5}  width='80px'  alt=""/>
+            </div>
+            <div class="slide">
+              <Image className="brand-logo" src={brand6}  width='80px'  alt=""/>
+            </div>
+          </div>
         </div>
       </div>
     </>

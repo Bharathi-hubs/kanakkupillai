@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import '../styles/Header.css'
 import '../styles/Home.css'
+import '../styles/Footer.css'
 import Layout from './Layout/layout'
 import 'bootstrap/dist/css/bootstrap.css'
 import { useEffect } from "react";
