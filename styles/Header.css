@@ -1,0 +1,107 @@
+/* #Navigation Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+  background: #ffffff;
+  font-size: 0;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav > ul > li {
+  list-style: none !important;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 15px;
+  position: relative;
+}
+nav > ul > li:first-child {
+  padding-left: 0;
+}
+nav > ul > li:last-child {
+  padding-right: 0;
+}
+nav > ul > li > a {
+  color: #000000;
+  display: block;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 3px solid transparent;
+}
+nav > ul > li:hover > a {
+  color: #69aae0;
+  border-bottom: 3px solid #69aae0;
+}
+.ul-reset > li > a {
+  text-decoration: none;
+}
+.ul-reset > li {
+  list-style: none !important;
+}
+
+/* #Mega Menu Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+  background: #ffffff;
+  display: none;
+  border: 0.3px solid #e8e8e8;
+  left: 10%;
+  position: absolute;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* text-align: left; */
+  /* width: 100%; */
+}
+.mega-menu h6 {
+  color: #228848;
+  margin-top: 15px;
+}
+.mega-menu ul {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  width: 205px;
+}
+.mega-menu ul:last-child {
+  margin-right: 0;
+}
+.mega-menu a:hover {
+	color: #228848;
+}
+.mega-menu a {
+  /* border-bottom: 1px solid #ddd; */
+  color: #000000;
+  font-size: small;
+  display: block;
+  padding: 5px 0;
+}
+.mega-menu a:hover {
+  color: #2d6a91;
+}
+
+/* #Droppable Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.droppable {
+  position: static;
+}
+/* .droppable > a:after {
+  content: "\01F893";
+  font-family: FontAwesome;
+  font-size: 19px;
+} */
+.droppable:hover .mega-menu {
+  display: block;
+}
+
+/* #Browser Clearfix
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+
+.menu-header {
+  color: #228848;
+}
